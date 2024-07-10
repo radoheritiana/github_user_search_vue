@@ -1,0 +1,124 @@
+@import './base.css';
+
+body {
+  background-color: #24292e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  width: 40%;
+  margin: 3em auto;
+  background-color: #2b3137;
+  padding: 3em;
+  border-radius: 25px;
+  color: #fafbfc;
+}
+
+.user-list {
+  list-style: none;
+  margin-top: 1em;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #24292e;
+  color: #fafbfc;
+  margin-bottom: 0.5em;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.user-desc {
+  display: flex;
+  justify-content: start;
+  gap: 1em;
+}
+
+.username {
+  color: #2dba4e;
+  font-size: 24px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.list-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.country {
+  font-size: 14px;
+}
+
+.btn-see-profile {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #2dba4e;
+  color: #fff;
+  padding: 0.6em 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-see-profile:hover {
+  color: #fafbfc;
+}
+
+.site-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.formulaire {
+  margin: 1em 0;
+  display: flex;
+  justify-content: start;
+  gap: 1em;
+}
+
+.formulaire select {
+  padding: 0.5em 1em;
+  width: 55%;
+}
+
+.formulaire input {
+  padding: 0.5em 1em;
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    width: 88%;
+    padding: 3em 1em;
+  }
+
+  .username {
+    font-size: 20px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-see-profile {
+    padding: 0.3em 0.6em;
+  }
+
+  .list-item {
+    padding: 0.6em;
+
+  }
+}
